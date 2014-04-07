@@ -1,0 +1,35 @@
+{
+    "family": "test",
+    "version": "0.0.1",
+    "name": "spmTest",
+    "spm": {
+        "idleading": "_output/",
+        "source": "sea-modules",
+        "output": [
+            "start.js",
+            "app/gettingStart.js",
+            "app/index.js",
+            "app/userlist.js",
+            "collection/C_userlist.js",
+            "model/M_gettingStart.js",
+            "model/M_index.js",
+            "model/M_user.js",
+            "view/V_gettingStart.js",
+            "view/V_index.js",
+            "view/V_user.js",
+            "view/V_userlist.js"
+        ],
+        "alias": {
+            "$": "jquery/jquery/1.7.2/jquery",
+            "$-debug": "jquery/jquery/1.7.2/jquery-debug",
+            "jquery": "jquery/jquery/1.7.2/jquery",
+            "jquery-debug": "jquery/jquery/1.7.2/jquery-debug",
+            "json": "gallery/json/1.0.3/json",
+            "select2": "jquery/select2/3.4.5/select2-zh-cn",
+            "select2-css": "jquery/select2/3.4.5/select2.css",
+            "select2-css-debug":"jquery/select2/3.4.5/select2-debug.css",
+            "underscore": "gallery/underscore/1.5.2/underscore",
+            "backbone": "gallery/backbone/1.1.0/backbone"
+        }
+    }
+}

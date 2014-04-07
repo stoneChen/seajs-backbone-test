@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>seajs-based-test</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/seajs-backbone/static/style/bootstrap3/css/bootstrap.css"/>
+    <script id="seajsnode" src="/seajs-backbone/static/js/sea-modules/seajs/seajs/2.2.0/sea.js"></script>
+    <!--<script src="/sea-modules/seajs/seajs-combo/1.0.1/sea-combo.js"></script>-->
+    <!--<script src="/seajs-backbone/static/js/sea-modules/seajs/seajs-style/1.0.2/seajs-style.js"></script>-->
+    <!--<script src="/seajs-backbone/static/js/sea-modules/seajs/seajs-log/1.0.1/seajs-log.js"></script>-->
+    <!--<script src="/seajs-backbone/static/js/sea-modules/seajs/seajs-text/1.0.2/seajs-text.js"></script>-->
+    <script>
+        seajs.config({
+            alias: {
+                "$": "jquery/jquery/1.7.2/jquery",
+                "$-debug": "jquery/jquery/1.7.2/jquery-debug",
+                "jquery": "jquery/jquery/1.7.2/jquery",
+                "jquery-debug": "jquery/jquery/1.7.2/jquery-debug",
+                "seajs-debug": "seajs/seajs-debug/1.1.1/seajs-debug",
+                "json": "gallery/json/1.0.3/json",
+                "select2": "jquery/select2/3.4.5/select2-zh-cn",
+                "select2-css": "jquery/select2/3.4.5/select2.css",
+                "select2-css-debug":"jquery/select2/3.4.5/select2-debug.css",
+                "underscore": "gallery/underscore/1.5.2/underscore",
+                "backbone": "gallery/backbone/1.1.0/backbone",
+                "backboneLocalStorage": "gallery/backboneLocalStorage"
+            },
+            'map': [
+//                [ /^(.*\.(?:css|js))(.*)$/i, '$1?20140401' ]
+//                    [ /^(.*\/_output\/.*\.(?:css|js))(?:.*)$/i, '$1?20110802' ]
+              ],
+            debug: 1
+        })
+    </script>
+    <style>
+        .navbar-inverse .brand {
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .content {
+            margin-top: 51px;
+        }
+
+        .content .container {
+            padding-top: 20px;
+        }
+        #seajs-debug-console *{
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+<body>
+<header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+    <div class="container">
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav" id="nav">
+                <li class="brand">
+                    <a href="#">Backbone</a>
+                </li>
+                <li>
+                    <a href="#gettingStart?param1=345&param2=qwer">起步</a>
+                </li>
+                <li>
+                    <a href="#userlist?name=3">userlist</a>
+                </li>
+                <!--<li>-->
+                    <!--<a href="#model">Model</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="#collection">Colletion</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="#view">View</a>-->
+                <!--</li>-->
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#about">关于</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="content" id="content">
+
+</div>
+</body>
+<script>
+//    seajs.use('start');
+    seajs.use('_output/start');
+</script>
+</html>

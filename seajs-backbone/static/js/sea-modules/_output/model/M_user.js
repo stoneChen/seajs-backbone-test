@@ -1,0 +1,1 @@
+define("_output/model/M_user",["jquery/jquery/1.7.2/jquery","gallery/underscore/1.5.2/underscore","gallery/backbone/1.1.0/backbone","$"],function(a,b,c){"use strict";var d=(a("jquery/jquery/1.7.2/jquery"),a("gallery/underscore/1.5.2/underscore"),a("gallery/backbone/1.1.0/backbone")),e=d.Model.extend({defaults:{firstname:"",lastname:"",username:""}});c.exports=e});
